@@ -1,0 +1,690 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.container {
+    max-width: 1840px; 
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;   
+}
+
+body{
+  font-family: "Inter", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.3;
+
+}
+
+.header {
+    background-image: url(../images/header-bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    
+
+
+}
+
+.menu__btn{
+    width: 70px;
+    height: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.menu__btn span{
+    background-color: #ff5017;
+    height: 3px;
+    width: 100%;;
+
+
+}
+
+.header__content {
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: calc(100vh-135px); 
+    /* классный вычислитель высоты!! динамически!!! на приметку!!! */
+
+}
+.title {
+font-size: 345px;
+background: linear-gradient(180deg, #000000 0%, #830B02 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+padding-left: 150px;
+line-height: 0.75;
+padding-bottom: 362px;
+}
+
+.subtitle {
+font-size: 160px;
+background: linear-gradient(90deg, #FF5017 0%, #000000 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+align-self: flex-end;
+padding-right: 75px;
+padding-bottom: 50px;
+
+}
+
+.header__images{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; 
+    max-width: 100%;
+}
+
+
+
+
+.info {
+    background-color: #f8f8f8;
+    padding: 170px 0 170px 0;
+}
+
+.info__title{
+font-size: 160px;
+line-height: 0.8;
+text-transform: uppercase;
+color: #13171C;
+}
+
+
+
+.info__img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.info__content {
+    display: flex;
+     /* justify-content: space-between; */
+      margin-bottom: 167px;
+      padding-left: 155px;
+      padding-right: 102px;
+    /* align-items: center; */
+    gap: 94px;
+}
+
+.info__list {
+    column-count: 2;
+    gap: 140px;
+}
+
+.info__list dt,
+.info__list dd {
+    display: inline-block;
+}
+
+.info__list-line {
+    margin-bottom: 22px;
+}
+
+.price {
+font-size: 46px;
+margin-bottom: 40px;
+text-transform: uppercase;
+color: #13171C;
+}
+
+.order{
+display: flex;
+flex-direction: row;
+align-items: center; 
+padding: 30px;
+gap: 10px;
+width: 338px;
+height: 89px;
+background: linear-gradient(181.77deg, #FF5017 2.24%, #FF6837 99.25%);
+font-family: "Inter", serif;
+font-weight: 900;
+font-style: normal;
+font-size: 24px;
+}
+
+
+.info-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.info-gallery img {
+    max-width: 100%;
+}
+
+
+
+
+
+
+.color {
+    background-color: #f8f8f8;
+}
+
+.color__text {
+    text-align: center;
+    font-size: 160px;
+    text-transform: uppercase;
+     margin-bottom: 70px;
+    color: #13171C;
+}
+
+.color__gallery {
+    background-color: #13171C;
+}
+
+.color__gallery-start,
+.color__gallery-end {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.gallery-box {
+    padding: 170px 50px 170px 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+   
+}
+
+.gallery-box img {
+    max-width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+} 
+
+.gallery-box p {
+    font-style: 36px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+} 
+
+
+
+
+.contacts {
+    padding: 170px 0 100px 0;
+    background-color: #13171C;
+}
+
+.contants__title {
+font-size: 36px;
+line-height: 40px;
+text-transform: uppercase;
+color: #FF5017;
+text-align: center;
+margin-bottom: 70px;
+
+}
+
+.contacts__box{
+    display: flex;
+    gap: 40px 200px;
+    justify-content: space-between;
+    padding-left: 300px;
+     padding-right: 150px;
+}
+
+.contacts__info {
+    max-width: 565px;
+    
+}
+
+
+.contacts__headtext{
+    color: #BCBCBC;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.contacts__text,
+.contacts__text-rules,
+.phone {
+    color: #fff;
+}
+
+.contacts__text {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    max-width: 477px;
+}
+
+.contacts__text-rules {
+    margin-top: 77px;
+    font-size: 14px;
+    max-width: 330px;
+}
+
+.form {
+    flex-basis: 594px;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 594px;
+    padding: 10px;
+    font-size: 24px;
+    font-family: "Inter", serif;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 1.3;
+    text-transform: uppercase; 
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+.form__input::placeholder {
+    font-size: 24px;
+    font-family: "Inter", serif;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 1.3;
+    text-transform: uppercase;  
+}
+
+.form__order {
+    width: 100%;
+     justify-content: center;
+}
+
+
+
+footer {
+    background-color: #13171C;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 70px;;
+    padding-top: 15px;
+    font-size: 14px;
+    font-family: "Inter", serif;
+    font-weight: 900;
+    line-height: 1.3;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1820px) { 
+    .info-gallery {
+        gap: 24px 20px;
+    }
+
+    .info-gallery img {
+       width: 49%;
+    }    
+}
+
+
+
+@media(max-width: 1600px) {
+    .contacts {
+    padding: 68px 0 41px 0;
+    }
+
+    .contacts__box {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+}
+
+
+
+@media(max-width: 1200px) {
+    .title{
+        font-size: 280px;
+        padding-left: 0;
+    }
+    .subtitle{
+        font-size: 140px;
+        padding-right: 0;
+    }
+    .header__images {
+        top: 0;
+    }
+
+    .info {
+        padding: 100px 0;
+    }
+
+    .info__title {
+    font-size: 86px;
+    }
+
+    .info__content {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 100px;
+        gap: 20px;
+    }
+
+    .color__text {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.gallery-box {
+    padding: 50px 20px 50px 20px;
+    flex-wrap: wrap;
+  
+}
+
+.gallery-box__item {
+    width: 47%;
+}
+
+.gallery-box img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.contacts__box {
+    gap: 40px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+footer {
+    padding-bottom: 30px;
+    
+}
+
+}
+
+
+@media(max-width: 1040px) {
+    .info-gallery img {
+        width: 100%;
+    }
+
+    .info__list {
+    gap: 20px;
+    }
+
+    .info__content {
+        margin-bottom: 50px;
+    }
+
+    .price {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+@media(max-width: 800px) {
+
+    .title{
+        font-size: 180px;
+        padding-left: 0;
+    }
+    .subtitle{
+        font-size: 90px;
+        padding-right: 0;
+    }
+    .header__top{
+        padding-top: 25px;
+    }
+    .menu__btn span {
+        box-sizing: content-box;
+        border: 1px solid #000;
+    }
+     .info__title {
+        font-size: 54px;
+        text-align: center;
+    }
+
+    .info__list {
+    column-count: 1;
+    }
+
+    .info__list-line {
+    margin-bottom: 5px;
+    font-style: 18px;
+    }
+
+   .header {
+   min-height: 85vh;
+   }
+
+   .contacts__box {
+    display: block;
+}
+
+    .order {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .form__order{
+        width: auto;
+    }
+
+    .contacts__headtext {
+        font-size: 18px;
+    }
+
+    .contacts__text {
+    padding-top: 5px;
+    margin-bottom: 5px;
+     font-size: 18px;
+}
+
+.form__input {
+    font-size: 18px;
+}
+
+.form__input::placeholder {
+    font-size: 18px;
+}
+
+
+
+@media(max-width: 670px) {
+    
+    .info__content {
+        display: block;
+        text-align: center;
+    }
+
+    .order {
+         display: block;
+         margin: auto;
+    }
+
+    .color__text {
+        font-size: 38px;
+    }
+
+    .gallery-box__item {
+        width: 99%;
+    }
+}
+
+
+
+
+
+@media(max-width: 530px) {
+     .title{
+        font-size: 130px;
+        padding-left: 0;
+     }
+    .subtitle{
+        font-size: 65px;
+        padding-right: 0;
+    }
+
+    .contants__title {
+        font-size: 24px;
+
+    }
+
+    .contacts {
+        padding: 50px 0;
+    }
+
+
+}
+
+
+@media(max-width: 375px) {
+.info__title {
+        font-size: 44px;
+        text-align: center;
+    }
+
+     .title{
+        font-size: 120px;
+    
+     }
+
+
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------- cursor mouse круглые кружочки ----------------------------------------------------begin-----*/
+.click_effect{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 5px solid #3cce14;
+    pointer-events: none;
+    z-index: 10000;
+    opacity: 0;
+    margin-top: -30px;
+    margin-left: -30px;
+    border-radius: 50%;
+    animation-name: click_animation;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+}
+
+@keyframes click_animation {
+    10%{
+        opacity: 1;
+        transform: scale(0.1);
+    }
+    20%{
+        opacity: 1;
+        transform: scale(0.2);
+    }
+    30%{
+        opacity: 1;
+        transform: scale(0.3);
+    }
+
+    40%{
+        opacity: 0.9;
+        transform: scale(0.4);
+    }
+    50%{
+        opacity: 0.7;
+        transform: scale(0.5);
+    }
+    60%{
+        opacity: 0.5;
+        transform: scale(0.6);
+    }
+    70%{
+        opacity: 0.3;
+        transform: scale(0.7);
+    }
+    80%{
+        opacity: 0.1;
+        transform: scale(0.8);
+    }
+    90%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+/* -------------------------- cursor mouse ----------------------------------------------------end-----*/
